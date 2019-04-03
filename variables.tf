@@ -1,6 +1,3 @@
-variable "pingdom_user" {}
-variable "pingdom_password" {}
-variable "pingdom_api_key" {}
 
 variable "team_name" {
   description = "Tag for which team owns this check, needs to be a single workd e.g. cla"
