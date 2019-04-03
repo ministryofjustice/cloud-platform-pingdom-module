@@ -12,5 +12,5 @@ resource "pingdom_check" "application" {
 
   integrationids = ["${var.integration_id}"]
 
-  tags = "${var.team_name},${var.application},${var.environment},${var.business-unit}"
+  tags = "${lower(var.team_name)},${lower(var.application)},${lower(var.environment)},${lower(var.business-unit)}"
 }

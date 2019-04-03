@@ -2,11 +2,16 @@ variable "pingdom_user" {}
 variable "pingdom_password" {}
 variable "pingdom_api_key" {}
 
-variable "team_name" {}
-variable "application" {}
+variable "team_name" {
+  description = "Tag for which team owns this check, needs to be a single workd e.g. cla"
+}
+
+variable "application" {
+  description = "Tag for application name e.g. alertmanager"
+}
 
 variable "environment" {
-  description = "e.g. prod"
+  description = "Tag for environment e.g. prod"
 }
 
 variable "business-unit" {
@@ -15,7 +20,7 @@ variable "business-unit" {
 }
 
 variable "check_name" {
-  description = "The name of your Pingdom check"
+  description = "The name of your Pingdom check e.g. Alertmanager - Live-1"
 }
 
 variable "host" {
@@ -31,5 +36,5 @@ variable "port" {
 }
 
 variable "integration_id" {
-  description = "The integration integer for your Pingdom webhook e.g. 1000"
+  description = "The integration integer for your Pingdom webhook e.g. 1000, integration has to exist."
 }
