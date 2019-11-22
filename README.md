@@ -1,4 +1,4 @@
-# Cloud-Platform Pingdom Terraform Module
+# ARCHIVED: Cloud-Platform Pingdom Terraform Module
 This module allows you to create Pingdom alerts from the [cloud-platform-environments](https://github.com/ministryofjustice/cloud-platform-environments).
 ## Dependancies
 If you want to run this locally, you'll need the following:
